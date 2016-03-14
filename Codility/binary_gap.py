@@ -25,7 +25,7 @@ def solution(N):
     binary = bin(N)[2:]
     gap = 0
     gaps = []
-    for index, digit in enumerate(binary):
+    for digit in binary:
         if digit == '0':
             gap += 1
         if digit == '1':
