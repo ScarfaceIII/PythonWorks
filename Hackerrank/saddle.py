@@ -6,23 +6,26 @@ maximum in its column).
 
 '''
 
-def saddle(N):
-    n = int(pow(len(N),.5))
+def saddle(input):
+    arr = input.split(' ')
+    n = int(pow(len(arr),.5))
     matrix = [[0 for x in range(n)] for y in range(n)]
 
     for i in xrange(n):
         for j in xrange(n):
-            matrix[i][j] = N[j+(n*i)]
-    
+            matrix[i][j] = int(arr[j+(n*i)])
+    print matrix    
     colMax = [float('-inf')] * n
     rowMin = [float('inf')] * n 
     for i in xrange(n):
         for j in xrange(n):
             rowMin[i] = min(rowMin[i], matrix[i][j])
             colMax[j] = max(colMax[j], matrix[i][j])
-
+    
+    saddle_points = 0
     for i in xrange(n):
         for j in xrange(n):
             if matrix[i][j] == rowMin[i] == colMax[j]:
-                return matrix[i][j]
-    
+                saddle_points += 1
+    return saddle_points
+
