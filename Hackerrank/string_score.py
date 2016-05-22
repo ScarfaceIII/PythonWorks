@@ -1,8 +1,22 @@
 '''
-Given a string, function must return its score.
-Each letter's score is the letter's position in the 
-alphabet (spaces or symbols don't count).
-If the string has two consecutive letters, score duplicates.
+
+Write an algorithm that takes a string as input and returns its "score" 
+by converting each letter to its numeric form (e.g. a/A=1, b/B=2, c/C=3 etc.)
+
+The input is a sentence, where spaces do not directly contribute to the score. 
+A word's score is doubled for every adjacent pair of letters it contains (e.g. 
+"rolled" contains a double "l" so the word score is multiplied by two).
+
+Examples:
+
+Input: A
+Output: 1
+
+Input: Now we only have one sentence
+Output: 301
+
+Input: The word needlessly contains two sets of double letters
+Output: 1067
 
 '''
 
