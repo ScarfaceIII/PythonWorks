@@ -1,8 +1,19 @@
 '''
 
-Function is given a number N as input and must return the 
-Nth number of A, where A is the array where Nth element 
-is the sum of (N-1)th and (N-2)th elements.
+Let `A` be an integer sequence for which the Nth number is 
+defined as the summation of its two previous numbers, i.e. the (N-1) and (N-2).
+
+Write a function that takes an integer N, between 0 and 10, and returns the 
+Nth member of this sequence, given that the first two numbers of this sequence 
+are 0 and 1 respectively.
+
+Examples:
+
+Input: 1
+Output: 0
+
+Input: 3
+Output: 2
 
 '''
 def ifibonacci(n):
