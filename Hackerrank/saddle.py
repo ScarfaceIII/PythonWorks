@@ -1,8 +1,23 @@
 '''
-Given a list of numbers that represents a square matrix, 
-function must return the saddle point of the matrix 
-(namely, the minimum value in a row, who is also the 
-maximum in its column).
+
+A Saddle point in an array is a number that is larger than or equal 
+to every number in its column and, at the same time, smaller than or 
+equal to every number in its row.
+
+Write a function which takes a string representing a square array 
+of integers (read left to right, top to bottom) as a parameter and 
+returns the number of saddle points, if any, in the array.
+
+Examples:
+
+Input 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15 16
+
+Output: 1 (saddle point is 13)
 
 '''
 
