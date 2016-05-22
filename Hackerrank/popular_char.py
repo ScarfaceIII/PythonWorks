@@ -1,8 +1,20 @@
 '''
-Find the most popular character in a given string.
+Write a function which accepts a string as a parameter and returns the character which 
+appears most frequently.
+If two or more characters are jointly the most common, the algorithm should return 
+that which comes first in the alphabet. Only letters a-z need to be considered and 
+you can rely only on lower case being used.
 
-Example input: 'abracadabra'
-Example output: 'a'
+Example:
+
+Input: blablab
+Output: b
+
+Input: abcdefghijklmnopqrstuvwyz
+Output: a
+
+Input: 'abracadabra'
+Output: 'a'
 
 '''
 
